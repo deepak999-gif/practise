@@ -1,0 +1,5 @@
+outs:
+- md5: 62b21e3ec86376f8b8f1a4d86a407a72
+  size: 1508
+  hash: md5
+  path: ml_pipeline_dummy_data.csv

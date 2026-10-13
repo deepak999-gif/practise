@@ -13,14 +13,14 @@ console_handler.setFormatter(formatter)
 file_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
-path=r"C:\Users\LENOVO\Downloads\categories.csv"
+path=r"C:\Users\LENOVO\Downloads\ml_pipeline_dummy_data.csv"
 def ingest_data(path):
     logger.info("Starting data ingestion process")
     df=pd.read_csv(path)
     logger.info("readed the data from the csv file")
     paths=os.path.join("data","raw")
     os.makedirs(paths,exist_ok=True)
-    df.to_csv(os.path.join(paths,"categories.csv"),index=False)
+    df.to_csv(os.path.join(paths,"ml_pipeline_dummy_data.csv"),index=False)
     logger.info("Data ingestion completed successfully")
     
 if __name__=="__main__":
