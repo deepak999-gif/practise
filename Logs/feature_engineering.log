@@ -1,0 +1,5 @@
+2026-10-13 16:07:33,128 - Feature_Engineering_Logs - INFO - Starting feature engineering: creating new columns experience to age ratio
+2026-10-13 16:07:33,142 - Feature_Engineering_Logs - INFO - Read the data from the csv file
+2026-10-13 16:07:33,144 - Feature_Engineering_Logs - INFO - Feature engineering completed successfully
+2026-10-13 16:07:33,144 - Feature_Engineering_Logs - INFO - Saving the feature_engineered data to the specified path
+2026-10-13 16:07:33,146 - Feature_Engineering_Logs - INFO - Feature-engineered data saved to data\feature_engineered\ml_pipeline_dummy_data.csv
