@@ -1,6 +1,7 @@
 import os
 import logging 
 import pandas as pd
+from sklearn.model_selection import train_test_split
 logger=logging.getLogger("Feature_Engineering_Logs")
 logger.setLevel(logging.INFO)
 stream_handler=logging.StreamHandler()
@@ -28,6 +29,22 @@ def age_to_experience(path):
     df['experience_to_age_ratio'] = df['experience_years'] / df['age']
     logger.info("Feature engineering completed successfully")
     return df
+# Split features and target
+def split_features_target(df):
+    logger.info("Splitting features and target")
+    X = df.drop(columns=["promoted"])
+    y = df["promoted"]
+    logger.info("Features and target split successfully")
+    X.to_csv("features.csv", index=False)
+    logger.info("Features saved to features.csv")
+    y.to_csv("target.csv", index=False)
+    logger.info("Target saved to target.csv")
+    return df
+
+
+
+
 if __name__=="__main__":
     df=age_to_experience(path)
+    df=split_features_target(df)
     save_data(df,"ml_pipeline_dummy_data.csv")

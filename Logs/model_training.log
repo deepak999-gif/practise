@@ -1,0 +1,17 @@
+2026-10-15 09:11:07,467 - Model_Training_Logs - INFO - Loading features and target data
+2026-10-15 09:11:52,543 - Model_Training_Logs - INFO - Loading features and target data
+2026-10-15 09:11:52,546 - Model_Training_Logs - INFO - Features and target data loaded successfully
+2026-10-15 09:11:52,547 - Model_Training_Logs - INFO - Splitting data into training and testing sets
+2026-10-15 09:11:52,552 - Model_Training_Logs - INFO - Data split successfully
+2026-10-15 09:11:52,559 - Model_Training_Logs - INFO - Training the baseline model
+2026-10-15 09:11:52,623 - Model_Training_Logs - INFO - Baseline model trained successfully
+2026-10-15 09:11:52,624 - Model_Training_Logs - INFO - Saving the trained model to disk
+2026-10-15 09:11:52,625 - Model_Training_Logs - INFO - Model saved successfully
+2026-10-15 09:13:17,198 - Model_Training_Logs - INFO - Loading features and target data
+2026-10-15 09:13:17,202 - Model_Training_Logs - INFO - Features and target data loaded successfully
+2026-10-15 09:13:17,202 - Model_Training_Logs - INFO - Splitting data into training and testing sets
+2026-10-15 09:13:17,204 - Model_Training_Logs - INFO - Data split successfully
+2026-10-15 09:13:17,210 - Model_Training_Logs - INFO - Training the baseline model
+2026-10-15 09:13:17,262 - Model_Training_Logs - INFO - Baseline model trained successfully
+2026-10-15 09:13:17,262 - Model_Training_Logs - INFO - Saving the trained model to disk
+2026-10-15 09:13:17,263 - Model_Training_Logs - INFO - Model saved successfully
