@@ -1,0 +1,9 @@
+2026-10-15 09:24:13,525 - Model_Training_Logs - INFO - Loading the trained model from disk
+2026-10-15 09:24:13,609 - Model_Training_Logs - INFO - Model loaded successfully
+2026-10-15 09:24:13,609 - Model_Training_Logs - INFO - Loading test data for predictions
+2026-10-15 09:24:13,613 - Model_Training_Logs - INFO - Test data loaded successfully
+2026-10-15 09:24:13,613 - Model_Training_Logs - INFO - Making predictions on the test data
+2026-10-15 09:24:13,635 - Model_Training_Logs - INFO - Predictions made successfully
+2026-10-15 09:24:13,635 - Model_Training_Logs - INFO - Loading true labels for evaluation
+2026-10-15 09:24:13,638 - Model_Training_Logs - INFO - True labels loaded successfully
+2026-10-15 09:24:13,674 - Model_Training_Logs - INFO - Model evaluation completed. Accuracy: 0.75
