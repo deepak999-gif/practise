@@ -30,3 +30,21 @@
 2026-10-15 10:02:14,159 - Feature_Engineering_Logs - INFO - Target saved to target.csv
 2026-10-15 10:02:14,163 - Feature_Engineering_Logs - INFO - Saving the feature_engineered data to the specified path
 2026-10-15 10:02:14,166 - Feature_Engineering_Logs - INFO - Feature-engineered data saved to data\feature_engineered\ml_pipeline_dummy_data.csv
+2026-10-15 11:14:16,639 - Feature_Engineering_Logs - INFO - Starting feature engineering: creating new columns experience to age ratio
+2026-10-15 11:14:16,642 - Feature_Engineering_Logs - INFO - Read the data from the csv file
+2026-10-15 11:14:16,644 - Feature_Engineering_Logs - INFO - Feature engineering completed successfully
+2026-10-15 11:14:16,644 - Feature_Engineering_Logs - INFO - Splitting features and target
+2026-10-15 11:14:16,645 - Feature_Engineering_Logs - INFO - Features and target split successfully
+2026-10-15 11:14:16,648 - Feature_Engineering_Logs - INFO - Features saved to features.csv
+2026-10-15 11:14:16,651 - Feature_Engineering_Logs - INFO - Target saved to target.csv
+2026-10-15 11:14:16,657 - Feature_Engineering_Logs - INFO - Saving the feature_engineered data to the specified path
+2026-10-15 11:14:16,659 - Feature_Engineering_Logs - INFO - Feature-engineered data saved to data\feature_engineered\ml_pipeline_dummy_data.csv
+2026-10-15 11:18:02,921 - Feature_Engineering_Logs - INFO - Starting feature engineering: creating new columns experience to age ratio
+2026-10-15 11:18:02,923 - Feature_Engineering_Logs - INFO - Read the data from the csv file
+2026-10-15 11:18:02,924 - Feature_Engineering_Logs - INFO - Feature engineering completed successfully
+2026-10-15 11:18:02,924 - Feature_Engineering_Logs - INFO - Splitting features and target
+2026-10-15 11:18:02,925 - Feature_Engineering_Logs - INFO - Features and target split successfully
+2026-10-15 11:18:02,928 - Feature_Engineering_Logs - INFO - Features saved to features.csv
+2026-10-15 11:18:02,931 - Feature_Engineering_Logs - INFO - Target saved to target.csv
+2026-10-15 11:18:02,933 - Feature_Engineering_Logs - INFO - Saving the feature_engineered data to the specified path
+2026-10-15 11:18:02,936 - Feature_Engineering_Logs - INFO - Feature-engineered data saved to data\feature_engineered\ml_pipeline_dummy_data.csv

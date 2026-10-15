@@ -13,3 +13,6 @@
 2026-10-15 10:00:57,343 - Data_Ingestion_Logs - INFO - Starting data ingestion process
 2026-10-15 10:00:57,363 - Data_Ingestion_Logs - INFO - readed the data from the csv file
 2026-10-15 10:00:57,366 - Data_Ingestion_Logs - INFO - Data ingestion completed successfully
+2026-10-15 11:02:36,243 - Data_Ingestion_Logs - INFO - Starting data ingestion process
+2026-10-15 11:02:36,265 - Data_Ingestion_Logs - INFO - readed the data from the csv file
+2026-10-15 11:02:36,270 - Data_Ingestion_Logs - INFO - Data ingestion completed successfully

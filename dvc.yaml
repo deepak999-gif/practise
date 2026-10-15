@@ -1,0 +1,42 @@
+stages:
+  data_ingestion:
+    cmd: python src/data_ingestion.py
+    deps:
+    - src/data_ingestion.py
+    outs:
+    - data/raw/ml_pipeline_dummy_data.csv
+  data_preprocessing:
+    cmd: python src/data_preprocessing.py
+    deps:
+    - data/raw/ml_pipeline_dummy_data.csv
+    - src/data_preprocessing.py
+    outs:
+    - data/processed/ml_pipeline_dummy_data.csv
+  feature_engineering:
+    cmd: python src/feature_engineering.py
+    deps:
+    - data/processed/ml_pipeline_dummy_data.csv
+    - src/feature_engineering.py
+    outs:
+    - data/feature_engineered/ml_pipeline_dummy_data.csv
+    - target.csv
+    - features.csv
+  model_training:
+    cmd: python src/model_training.py
+    deps:
+    - features.csv
+    - src/model_training.py
+    - target.csv
+    outs:
+    - X_test.csv
+    - X_train.csv
+    - y_test.csv
+    - y_train.csv
+    - model.pkl
+  model_evaluation:
+    cmd: python src/model_evaluation.py
+    deps:
+    - X_test.csv
+    - model.pkl
+    - src/model_evaluation.py
+    - y_test.csv
