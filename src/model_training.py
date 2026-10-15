@@ -34,7 +34,7 @@ def load_data(features_path, target_path):
 def split_train_test(X,y):
     logger.info("Splitting data into training and testing sets")
     X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42)
+    X, y, test_size=0.2, random_state=40)
     logger.info("Data split successfully")
     return X_train, X_test, y_train, y_test
 

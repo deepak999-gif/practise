@@ -15,3 +15,11 @@
 2026-10-15 09:13:17,262 - Model_Training_Logs - INFO - Baseline model trained successfully
 2026-10-15 09:13:17,262 - Model_Training_Logs - INFO - Saving the trained model to disk
 2026-10-15 09:13:17,263 - Model_Training_Logs - INFO - Model saved successfully
+2026-10-15 10:04:41,644 - Model_Training_Logs - INFO - Loading features and target data
+2026-10-15 10:04:41,648 - Model_Training_Logs - INFO - Features and target data loaded successfully
+2026-10-15 10:04:41,648 - Model_Training_Logs - INFO - Splitting data into training and testing sets
+2026-10-15 10:04:41,649 - Model_Training_Logs - INFO - Data split successfully
+2026-10-15 10:04:41,655 - Model_Training_Logs - INFO - Training the baseline model
+2026-10-15 10:04:41,711 - Model_Training_Logs - INFO - Baseline model trained successfully
+2026-10-15 10:04:41,712 - Model_Training_Logs - INFO - Saving the trained model to disk
+2026-10-15 10:04:41,713 - Model_Training_Logs - INFO - Model saved successfully

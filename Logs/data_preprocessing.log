@@ -20,3 +20,11 @@
 2026-10-15 08:23:59,683 - Data_Preprocessing_Logs - INFO - Categorical encoding completed successfully
 2026-10-15 08:23:59,683 - Data_Preprocessing_Logs - INFO - Saving the processed data to the specified path
 2026-10-15 08:23:59,688 - Data_Preprocessing_Logs - INFO - Processed data saved to data\processed\ml_pipeline_dummy_data.csv
+2026-10-15 10:01:46,867 - Data_Preprocessing_Logs - INFO - Starting data preprocessing
+2026-10-15 10:01:46,871 - Data_Preprocessing_Logs - INFO - Read the data from the csv file
+2026-10-15 10:01:46,872 - Data_Preprocessing_Logs - INFO - Filled missing values in 'experience_years' column with median
+2026-10-15 10:01:46,873 - Data_Preprocessing_Logs - INFO - Filled missing values in 'salary' column with median
+2026-10-15 10:01:46,873 - Data_Preprocessing_Logs - INFO - Starting categorical encoding
+2026-10-15 10:01:46,875 - Data_Preprocessing_Logs - INFO - Categorical encoding completed successfully
+2026-10-15 10:01:46,875 - Data_Preprocessing_Logs - INFO - Saving the processed data to the specified path
+2026-10-15 10:01:46,880 - Data_Preprocessing_Logs - INFO - Processed data saved to data\processed\ml_pipeline_dummy_data.csv
