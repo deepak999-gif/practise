@@ -1,5 +1,7 @@
 
 import pickle
+import mlflow
+import mlflow.sklearn
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -22,6 +24,12 @@ logger.addHandler(file_handler)
 
 features_path="features.csv"
 target_path="target.csv"
+logger.info("MLflow tracking URI set to DagsHub")
+mlflow.set_tracking_uri("https://dagshub.com/deepak999-gif/practise.mlflow")
+import dagshub
+dagshub.init(repo_owner='deepak999-gif', repo_name='practise', mlflow=True)
+mlflow.set_experiment("ML_Pipeline_Experiment with decision tree classifier")
+logger.info("MLflow experiment set to ML_Pipeline_Experiment with decision tree classifier")
 
 def load_data(features_path, target_path):
     logger.info("Loading features and target data")
@@ -43,12 +51,21 @@ def save_data(X_train, X_test, y_train, y_test):
     y_train.to_csv("y_train.csv", index=False)
     X_test.to_csv("X_test.csv", index=False)
     y_test.to_csv("y_test.csv", index=False)
-
+    
 # Create and train baseline model
 def model_training(X_train, y_train):
-    logger.info("Training the baseline model")
-    model = DecisionTreeClassifier(random_state=42)
-    model.fit(X_train, y_train)
+    with mlflow.start_run():
+      logger.info("Training the baseline model")
+      model = DecisionTreeClassifier(random_state=42)
+      model.fit(X_train, y_train)
+      mlflow.sklearn.log_model(
+    model,
+    name="model",
+    skops_trusted_types=["sklearn.tree._tree.Tree"]
+)
+      mlflow.log_artifact("Logs/model_training.log")
+      mlflow.log_artifact('src/model_training.py')
+    
     logger.info("Baseline model trained successfully")
     return model
 

@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score
 import pickle
 import logging
+import mlflow
 import os
 logger=logging.getLogger("Model_Training_Logs")
 logger.setLevel(logging.INFO)
@@ -37,6 +38,7 @@ def evaluate_model(y_test_path, y_pred):
     accuracy = accuracy_score(y_test, y_pred)
     logger.info(f"Model evaluation completed. Accuracy: {accuracy}")
     return accuracy
+    mlflow.log_metric("accuracy", accuracy)
 
 if __name__=="__main__":
     model=load_model(model_path)

@@ -23,3 +23,18 @@
 2026-10-15 10:04:41,711 - Model_Training_Logs - INFO - Baseline model trained successfully
 2026-10-15 10:04:41,712 - Model_Training_Logs - INFO - Saving the trained model to disk
 2026-10-15 10:04:41,713 - Model_Training_Logs - INFO - Model saved successfully
+2026-10-15 10:21:29,794 - Model_Training_Logs - INFO - Loading features and target data
+2026-10-15 10:21:29,812 - Model_Training_Logs - INFO - Features and target data loaded successfully
+2026-10-15 10:21:29,812 - Model_Training_Logs - INFO - Splitting data into training and testing sets
+2026-10-15 10:21:29,823 - Model_Training_Logs - INFO - Data split successfully
+2026-10-15 10:21:33,464 - Model_Training_Logs - INFO - Training the baseline model
+2026-10-15 10:25:51,228 - Model_Training_Logs - INFO - MLflow tracking URI set to DagsHub
+2026-10-15 10:26:04,825 - Model_Training_Logs - INFO - MLflow experiment set to ML_Pipeline_Experiment with decision tree classifier
+2026-10-15 10:26:04,825 - Model_Training_Logs - INFO - Loading features and target data
+2026-10-15 10:26:04,829 - Model_Training_Logs - INFO - Features and target data loaded successfully
+2026-10-15 10:26:04,829 - Model_Training_Logs - INFO - Splitting data into training and testing sets
+2026-10-15 10:26:04,830 - Model_Training_Logs - INFO - Data split successfully
+2026-10-15 10:26:11,380 - Model_Training_Logs - INFO - Training the baseline model
+2026-10-15 10:26:33,959 - Model_Training_Logs - INFO - Baseline model trained successfully
+2026-10-15 10:26:33,960 - Model_Training_Logs - INFO - Saving the trained model to disk
+2026-10-15 10:26:33,960 - Model_Training_Logs - INFO - Model saved successfully
