@@ -38,6 +38,6 @@ def categorical_encoding(df):
 
 if __name__=="__main__":
     df=fill_na_values(path)
-    categorical_encoding(df)
+    df=categorical_encoding(df)
     save_data(df,"ml_pipeline_dummy_data.csv")
     
