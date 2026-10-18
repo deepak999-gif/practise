@@ -53,8 +53,8 @@ def save_data(X_train, X_test, y_train, y_test):
     y_test.to_csv("y_test.csv", index=False)
     
 # Create and train baseline model
-def model_training(X_train, y_train):
-    with mlflow.start_run():
+def model_training(X_train,X_test, y_train,y_test):
+    with mlflow.start_run(run_name="teri maa ka"):
       logger.info("Training the baseline model")
       model = DecisionTreeClassifier(random_state=42)
       model.fit(X_train, y_train)
@@ -64,10 +64,20 @@ def model_training(X_train, y_train):
     skops_trusted_types=["sklearn.tree._tree.Tree"]
 )
       mlflow.log_artifact("Logs/model_training.log")
+      logging_datatset(X_train, X_test, y_train, y_test)
       mlflow.log_artifact('src/model_training.py')
     
     logger.info("Baseline model trained successfully")
     return model
+
+def logging_datatset(X_train, X_test, y_train, y_test):
+    train_df=pd.concat([X_train,y_train],axis='columns')
+    train_df=mlflow.data.from_pandas(train_df)
+    test_df=pd.concat([X_test,y_test],axis='columns')
+    test_df=mlflow.data.from_pandas(test_df)
+    mlflow.log_input(train_df)
+    mlflow.log_input(test_df)
+    
 
 def saving_model(model):
     logger.info("Saving the trained model to disk")
@@ -79,7 +89,7 @@ if __name__=="__main__":
     X,y=load_data(features_path, target_path)
     X_train, X_test, y_train, y_test=split_train_test(X, y)
     save_data(X_train, X_test, y_train, y_test)
-    model=model_training(X_train, y_train)
+    model=model_training(X_train, X_test, y_train, y_test)
     saving_model(model)
     
     
